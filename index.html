@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamo-game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1> Gamo - <span>Game</span></h1>
+        </div>
+        <div class="gamemain" id="gamemain">
+            <div class="choices" id="choices">
+                <button onclick="playgame('rock')">👊</button>
+                <button onclick="playgame('paper')">✋</button>
+                <button onclick="playgame('scissors')">✌️</button>
+            </div>
+            <div class="child">
+                <div>
+                    <p>Player : <span id="playerdisplay"></span></p>
+                </div>
+                <div>
+                    <p> Computer : <span id="computerdisplay"></span> </p>
+                </div>
+                <div id="resultdisplay">
+
+                </div>
+
+                <div class="scoredisplay">Playerscore : <span id="playerscore">0</span></div>
+                <div class="scoredisplay">computerscore : <span id="computerscore">0</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
