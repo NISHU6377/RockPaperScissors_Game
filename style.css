@@ -15,8 +15,8 @@ body {
     text-align: center;
     flex-direction: column;
     margin: 8vmax auto;
-    max-width: 25vmax;
-    height: 30vmax;
+    max-width: 25rem;
+    height: 30rem;
     background: #c1c1c1;
     box-shadow: 20px 20px 60px #363535, inset -20px -20px 60px rgba(255, 255, 255, 0.246);
     border-radius: 40px;
@@ -54,11 +54,6 @@ body {
 .choices button:hover {
     background: #529693;
 }
-
-/* .child {
-   
-} */
-
 div p {
     margin: 10px;
     font-size: 1.5rem;
@@ -84,4 +79,23 @@ div p {
 .scoredisplay {
     margin-top: 10px;
     font-size: 1rem;
+}
+
+@media (max-width: 450px){
+    .container{
+        /* margin-left: 10px ;
+        margin-right: 10px ; */
+        position:absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 30rem;
+        width: 90vw;
+        }
+        .heading h1{
+            margin-bottom: 0;
+        }
+        .choices button{
+            margin-top: 0;
+        }
 }
